@@ -3,7 +3,7 @@
 """
 Created on Sun Aug  4 20:02:53 2019
 
-@author: alma
+@authors: alma, justin
 """
 
 wordSequences = {}
