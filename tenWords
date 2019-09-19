@@ -6,7 +6,7 @@ def printer(wordSeqs):
     sum = 0 #sum is sum of values in dict
     for value in wordSeqs.values():
         sum = sum + value
-    randRange = range(0,sum)
+    randRange = range(0,sum+1)
     rando = random.choice(randRange)
     
     #start with the first k,v pair. If rando - the v is less than 0, return
