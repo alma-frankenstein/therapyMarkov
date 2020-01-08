@@ -76,7 +76,7 @@ def capitalizer(statementString):
         else:
             statementString[index] = statementString[index].lower()
     statementString = " ".join(statementString)
-    if not testString[len(testString)-1].endswith('.'):
+    if not statementString[len(statementString)-1].endswith('.'):
         statementString = statementString.rstrip() + "."
     return statementString
     
