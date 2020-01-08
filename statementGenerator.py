@@ -71,7 +71,7 @@ def capitalizer(statementString):
     for index in range(len(statementString)):
         if index == 0:
             statementString[index] = statementString[index].title()
-        elif statementString[index-1].endswith('.') or statementString[index] == "I" or statementString[index] == "I'm" or statementString[index] == "I'd" or statementString[index] == "I'll":
+        elif statementString[index-1].endswith('.') or statementString[index-1].endswith('?') or statementString[index-1].endswith('!') or statementString[index] == "I" or statementString[index] == "I'm" or statementString[index] == "I'd" or statementString[index] == "I'll":
             statementString[index] = statementString[index].title()
         else:
             statementString[index] = statementString[index].lower()
