@@ -3,7 +3,7 @@
 
 
 from numpy import random
-import best_tester
+import input_to_dict
     
 def main():
     statementLength = 60
@@ -21,7 +21,7 @@ def pickRandom(): ##if it's the first or the prev word's not an outer key, pick 
 
 
 def weightedPick(word): #word is previous word in statement
-    outer = best_tester.markovDict()
+    outer = input_to_dict.markovDict()
     addWord = ""
     subdict = outer[word]
     sum = 0 #sum is sum of values
@@ -46,7 +46,7 @@ def weightedPick(word): #word is previous word in statement
 
 
 def createStatement(n):
-    outer = best_tester.markovDict()
+    outer = input_to_dict.markovDict()
     statementString = ""
     counter = 0
     while counter < n:
